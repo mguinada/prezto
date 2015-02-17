@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='subl'
+export VISUAL='subl'
 export PAGER='less'
 
 #
@@ -36,10 +36,11 @@ fi
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 
-# Set the list of directories that cd searches.
-# cdpath=(
-#   $cdpath
-# )
+# Set the the list of directories that cd searches.
+cdpath=(
+  /User/mguinada
+  $cdpath
+)
 
 # Set the list of directories that Zsh searches for programs.
 path=(
