@@ -48,6 +48,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gbV='git branch --verbose --verbose'
   alias gbx='git branch --delete'
   alias gbX='git branch --delete --force'
+  alias gbb='git checkout @\{-1\}'
 
   # Commit (c)
   alias gc='git commit --verbose'
